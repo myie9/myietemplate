@@ -32,6 +32,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
+import com.myie9.mouthmask.huawei.core.webview.AgentWebActivity;
 import com.myie9.mouthmask.huawei.fragment.AboutFragment;
 import com.myie9.mouthmask.huawei.fragment.SettingsFragment;
 import com.myie9.mouthmask.huawei.fragment.news.NewsFragment;
@@ -147,6 +148,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
 //                        break;
                     case R.id.nav_about:
                         openNewPage(AboutFragment.class);
+                        break;
+                    case R.id.nav_starred:
+                        AgentWebActivity.goWeb(MainActivity.this, getString(R.string.url_author_github));
                         break;
                     default:
                         XToastUtils.toast("点击了:" + menuItem.getTitle());

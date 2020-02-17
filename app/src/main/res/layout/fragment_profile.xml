@@ -57,14 +57,15 @@
                 <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
                     style="@style/InfoItem.Account"
                     app:sDividerLineType="none"
+                    android:id="@+id/menu_more"
                     app:sLeftTextString="我司产品" />
 
 
-                <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
-                    style="@style/InfoItem.Account"
-                    android:layout_marginTop="20dp"
-                    app:sDividerLineType="none"
-                    app:sLeftTextString="意见反馈" />
+<!--                <com.xuexiang.xui.widget.textview.supertextview.SuperTextView-->
+<!--                    style="@style/InfoItem.Account"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    app:sDividerLineType="none"-->
+<!--                    app:sLeftTextString="意见反馈" />-->
 
 <!--                <com.xuexiang.xui.widget.textview.supertextview.SuperTextView-->
 <!--                    android:id="@+id/menu_settings"-->

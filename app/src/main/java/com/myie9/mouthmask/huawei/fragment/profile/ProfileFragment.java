@@ -18,7 +18,9 @@
 package com.myie9.mouthmask.huawei.fragment.profile;
 
 import com.myie9.mouthmask.huawei.R;
+import com.myie9.mouthmask.huawei.activity.MainActivity;
 import com.myie9.mouthmask.huawei.core.BaseFragment;
+import com.myie9.mouthmask.huawei.core.webview.AgentWebActivity;
 import com.myie9.mouthmask.huawei.fragment.AboutFragment;
 import com.myie9.mouthmask.huawei.fragment.SettingsFragment;
 import com.xuexiang.xaop.annotation.SingleClick;
@@ -38,8 +40,8 @@ import butterknife.BindView;
 public class ProfileFragment extends BaseFragment implements SuperTextView.OnSuperTextViewClickListener {
 //    @BindView(R.id.riv_head_pic)
 //    RadiusImageView rivHeadPic;
-//    @BindView(R.id.menu_settings)
-//    SuperTextView menuSettings;
+    @BindView(R.id.menu_more)
+    SuperTextView menuMore;
     @BindView(R.id.menu_about)
     SuperTextView menuAbout;
 
@@ -72,6 +74,7 @@ public class ProfileFragment extends BaseFragment implements SuperTextView.OnSup
     @Override
     protected void initListeners() {
 //        menuSettings.setOnSuperTextViewClickListener(this);
+        menuMore.setOnSuperTextViewClickListener(this);
         menuAbout.setOnSuperTextViewClickListener(this);
 
     }
@@ -80,9 +83,9 @@ public class ProfileFragment extends BaseFragment implements SuperTextView.OnSup
     @Override
     public void onClick(SuperTextView view) {
         switch(view.getId()) {
-//            case R.id.menu_settings:
-//                openNewPage(SettingsFragment.class);
-//                break;
+            case R.id.menu_more:
+                AgentWebActivity.goWeb(this.getContext(), getString(R.string.url_author_github));
+                break;
             case R.id.menu_about:
                 openNewPage(AboutFragment.class);
                 break;
