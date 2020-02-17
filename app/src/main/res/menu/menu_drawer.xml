@@ -44,17 +44,17 @@
         android:id="@+id/other"
         android:checkableBehavior="single">
 
-        <item
-            android:id="@+id/nav_search"
-            android:checkable="false"
-            android:icon="@drawable/ic_menu_search"
-            android:title="@string/menu_search" />
+<!--        <item-->
+<!--            android:id="@+id/nav_search"-->
+<!--            android:checkable="false"-->
+<!--            android:icon="@drawable/ic_menu_search"-->
+<!--            android:title="@string/menu_search" />-->
 
-        <item
-            android:id="@+id/nav_notifications"
-            android:checkable="false"
-            android:icon="@drawable/ic_menu_notifications"
-            android:title="@string/menu_notifications" />
+<!--        <item-->
+<!--            android:id="@+id/nav_notifications"-->
+<!--            android:checkable="false"-->
+<!--            android:icon="@drawable/ic_menu_notifications"-->
+<!--            android:title="@string/menu_notifications" />-->
 
         <item
             android:id="@+id/nav_starred"
@@ -66,11 +66,11 @@
     <group
         android:id="@+id/setting"
         android:checkableBehavior="none">
-        <item
-            android:id="@+id/nav_settings"
-            android:checkable="false"
-            android:icon="@drawable/ic_menu_settings"
-            android:title="@string/menu_settings" />
+<!--        <item-->
+<!--            android:id="@+id/nav_settings"-->
+<!--            android:checkable="false"-->
+<!--            android:icon="@drawable/ic_menu_settings"-->
+<!--            android:title="@string/menu_settings" />-->
         <item
             android:id="@+id/nav_about"
             android:checkable="false"

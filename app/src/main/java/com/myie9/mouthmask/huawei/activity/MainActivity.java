@@ -116,18 +116,18 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
 
     private void initHeader() {
         navView.setItemIconTintList(null);
-        View headerView = navView.getHeaderView(0);
-        LinearLayout navHeader = headerView.findViewById(R.id.nav_header);
-        RadiusImageView ivAvatar = headerView.findViewById(R.id.iv_avatar);
-        TextView tvAvatar = headerView.findViewById(R.id.tv_avatar);
-        TextView tvSign = headerView.findViewById(R.id.tv_sign);
+//        View headerView = navView.getHeaderView(0);
+//        LinearLayout navHeader = headerView.findViewById(R.id.nav_header);
+//        RadiusImageView ivAvatar = headerView.findViewById(R.id.iv_avatar);
+//        TextView tvAvatar = headerView.findViewById(R.id.tv_avatar);
+//        TextView tvSign = headerView.findViewById(R.id.tv_sign);
 
         // TODO: 2019-10-09 初始化数据
-        ivAvatar.setImageResource(R.drawable.ic_default_head);
-        tvAvatar.setText(R.string.app_name);
-        tvSign.setText("这个家伙很懒，什么也没有留下～～");
+//        ivAvatar.setImageResource(R.drawable.ic_default_head);
+//        tvAvatar.setText(R.string.app_name);
+//        tvSign.setText("这个家伙很懒，什么也没有留下～～");
 
-        navHeader.setOnClickListener(this);
+//        navHeader.setOnClickListener(this);
     }
 
     protected void initListeners() {
@@ -142,9 +142,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
                 drawerLayout.closeDrawers();
             } else {
                 switch (menuItem.getItemId()) {
-                    case R.id.nav_settings:
-                        openNewPage(SettingsFragment.class);
-                        break;
+//                    case R.id.nav_settings:
+//                        openNewPage(SettingsFragment.class);
+//                        break;
                     case R.id.nav_about:
                         openNewPage(AboutFragment.class);
                         break;
@@ -182,9 +182,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.nav_header:
-                XToastUtils.toast("点击头部！");
-                break;
+//            case R.id.nav_header:
+//                XToastUtils.toast("点击头部！");
+//                break;
             default:
                 break;
         }
