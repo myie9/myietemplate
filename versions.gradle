@@ -168,10 +168,10 @@ build_versions.build_tools = "28.0.3"
 ext.build_versions = build_versions
 
 def app_release = [:]
-app_release.storeFile = "../keystores/android.keystore"
-app_release.storePassword = "xuexiang"
-app_release.keyAlias = "android.keystore"
-app_release.keyPassword = "xuexiang"
+app_release.storeFile = "/Volumes/windata/bak/mayicopKey/mayiReleaseCop.keystore"
+app_release.storePassword = "Asdrty123"
+app_release.keyAlias = "mayicop"
+app_release.keyPassword = "Asdrty123"
 
 ext.app_release = app_release
 
